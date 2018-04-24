@@ -33,12 +33,14 @@ public class PbActivity extends AppCompatActivity {
         Intent i = getIntent();
         int choice = i.getIntExtra("choice",0);
         if (choice == 0){
+
             tvChoice.setText("Secular");
             publicHolidays.add(new PublicHoliday("New Year's Day", "1 Jan 2018",R.drawable.newYear));
             publicHolidays.add(new PublicHoliday("Labour Day", "1 May 2018",R.drawable.labourday));
             publicHolidays.add(new PublicHoliday("National Day", "9 August 2018",R.drawable.nationalDay));
 
         }else{
+
             tvChoice.setText("Ehnic & Religion");
             publicHolidays.add(new PublicHoliday("Chineese New Year", "16 Feb 2018",R.drawable.cny));
             publicHolidays.add(new PublicHoliday("Good FriDay", "30 March 2018",R.drawable.goodfriday));
